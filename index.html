@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./assets/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
-      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+
 </head>
-<body>
-    <nav id="navigation">
+<body> 
+
+  <nav id="navigation">
       <div class="wrapper">
         <a class="logo" href="#home">
           <img src="./assets/logo.png" alt="saint-marie-logo">           
@@ -29,9 +29,9 @@
             <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
           </ul>
 
-          <a class="button" onclick="closeMenu()" href="#request">Fazer pedido</a>
+          <a class="button" onclick="closeMenu()" href="#request">Meu pedido</a>
 
-          <ul class="social-links">
+          <!-- <ul class="social-links">
             <li>
               <a target="_blank" href="https://instagram.com"
                 ><svg
@@ -110,7 +110,7 @@
                 </svg>
               </a>
             </li>
-          </ul>
+          </ul> -->
         </div>
 
         <button
@@ -169,10 +169,36 @@
           </svg>
         </button>
       </div>
-    </nav>
+  </nav>
+
+  <section id="home">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h3>Esqueça tudo que você conhece sobre pizzas</h3>
+          <h1>Experimente o verdadeiro sabor da pizza italiana</h1>
+          <p>Aqui na Saint Marie você se sentirá nas nuvens com o sabor da gastronomia italiana que nossos cozinheiros dominam</p>
+        </header>
+
+        <div class="content">
+          <a class="button" href="#request">
+            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M27.0287 22.6675C26.71 22.5082 24.6381 21.5519 24.3194 21.3926C24.0006 21.2332 23.6819 21.2332 23.3631 21.5519C23.0444 21.8707 22.4069 22.8269 22.0882 23.1457C21.9288 23.4644 21.61 23.4644 21.2913 23.305C20.1757 22.8269 19.0601 22.1894 18.1039 21.3926C17.307 20.5957 16.5101 19.6395 15.8726 18.6832C15.7133 18.3645 15.8726 18.0458 16.032 17.8864C16.1914 17.727 16.3508 17.4083 16.6695 17.2489C16.8289 17.0895 16.9882 16.7708 16.9882 16.6114C17.1476 16.452 17.1476 16.1333 16.9882 15.9739C16.8289 15.8145 16.032 13.9021 15.7133 13.1052C15.5539 11.9896 15.2352 11.9896 14.9164 11.9896C14.757 11.9896 14.4383 11.9896 14.1196 11.9896C13.8008 11.9896 13.3227 12.3084 13.1633 12.4677C12.2071 13.424 11.729 14.5396 11.729 15.8145C11.8883 17.2489 12.3665 18.6832 13.3227 19.9582C15.0758 22.5082 17.307 24.58 20.0163 25.855C20.8132 26.1737 21.4507 26.4925 22.2475 26.6518C23.0444 26.9706 23.8413 26.9706 24.7975 26.8112C25.9131 26.6518 26.8693 25.855 27.5068 24.8988C27.8256 24.2613 27.8256 23.6238 27.6662 22.9863C27.6662 22.9863 27.3474 22.8269 27.0287 22.6675ZM31.013 8.16468C24.7975 1.94917 14.757 1.94917 8.54153 8.16468C3.44162 13.2646 2.48538 21.0738 5.99157 27.2893L3.76036 35.4173L12.2071 33.1861C14.5977 34.4611 17.1476 35.0986 19.6976 35.0986C28.463 35.0986 35.4754 28.0862 35.4754 19.3207C35.6348 15.1771 33.8817 11.1927 31.013 8.16468ZM26.7099 30.4768C24.6381 31.7518 22.2475 32.5486 19.6976 32.5486C17.307 32.5486 15.0758 31.9111 13.0039 30.7955L12.5258 30.4768L7.58529 31.7518L8.86027 26.9706L8.54153 26.4925C4.71659 20.1176 6.62906 12.149 12.8446 8.16468C19.0601 4.18038 27.0287 6.25221 30.8536 12.3084C34.6786 18.5239 32.9255 26.6518 26.7099 30.4768Z" fill="white"/>
+              </svg> 
+            Eu quero uma pizza agora!</a>
+        </div>
+      </div>
+
+      <div class="col-b">
+        <img src="./assets/first-pizza.svg" alt="pizza">
+      </div>
+    </div>
+  </section>
+
+
 
     
-    <!-- JavaScript Lib -->
-    <script src="./assets/main.js"></script>
+  <!-- JavaScript Lib -->  
+  <script src="./assets/main.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@
   
 :root{
   --primary-orange: hsl(18, 100%, 50%);
+  --hover-orange: hsl(18, 100%, 42%);
   --primary-purple: hsl(330, 58%, 44%);
   --primary-grey: hsl(0, 0%, 61%);
     
@@ -46,14 +47,12 @@ body {
 ul {
   list-style: none;
 }
-  
+
 img {
   max-width: 100%;
 }
    
-.button {
-  background: var(--luminous-white);
-  
+a.button {
   border: none;
   border-radius: 4rem;
   
@@ -62,7 +61,7 @@ img {
   padding: 1.6rem 3.2rem;
   width: fit-content;
   
-  color: white;
+  color: var(--luminous-white);
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -81,11 +80,36 @@ img {
   background-color: var(--luminous-white);
 }
   
-.social-links {
+/* .social-links {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3.2rem;
+} */
+
+section h3{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 2rem;
+
+  color: var(--primary-orange);
+}
+
+section h1{
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+
+  color: var(--luminous-white);
+}
+
+section .col-a p{
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+
+  color: var(--primary-grey);
 }
 
   
@@ -94,12 +118,17 @@ nav {
   display: flex;
   
   height: var(--nav-height);
+  border-bottom: 0.2rem solid var(--primary-orange);
   
   position: fixed;
   top: 0;
   width: 100vw;
   
   z-index: 100;
+}
+
+.logo img{
+  width: 67%;
 }
   
 nav .wrapper {
@@ -195,10 +224,7 @@ body.menu-expanded .menu {
 }
   
 .menu .button:hover {
-  background-color: var(--luminous-white);
-  color: var(--primary-orange);
-  
-  filter: brightness(1);
+  background-color: var(--hover-orange);
 }
   
 body.menu-expanded .logo,
@@ -210,4 +236,57 @@ body.menu-expanded button {
 body.menu-expanded button path {
   stroke: white;
 }
-  
+
+/*=== HOME =================================*/
+
+#home{
+  padding-block: 0;
+  padding-top: calc(5rem + var(--nav-height));
+}
+
+#home h1{
+  margin: 1.8rem 0
+}
+
+#home p{
+  margin-bottom: 3rem;
+}
+
+#home::before {
+  content: '';
+  width: 100%;
+  height: calc(65% + var(--nav-height));
+  background-color: var(--bg-black);
+  display: block;
+
+  position: absolute;
+  top: var(--nav-height);
+  left: 0;
+  z-index: -1;
+}
+
+#home a.button{
+  margin-inline: auto;
+
+  background: var(--primary-orange);
+   
+  padding: 1rem 2.3rem;
+}
+
+#home a.button svg{
+  width: 2.5rem;
+}
+
+#home a.button:hover{
+  background-color: var(--hover-orange);
+}
+
+#home img {
+  display: none; 
+  /* Imagem muito grande para encaixar no mobile, colocarei em desktop */
+}
+
+/*=== "PIZZA MAIS VENDIDA" BANNER =================================*/
+
+
+
