@@ -255,7 +255,7 @@ body.menu-expanded button path {
 #home::before {
   content: '';
   width: 100%;
-  height: calc(65% + var(--nav-height));
+  height: calc(60% + var(--nav-height));
   background-color: var(--bg-black);
   display: block;
 
@@ -286,7 +286,115 @@ body.menu-expanded button path {
   /* Imagem muito grande para encaixar no mobile, colocarei em desktop */
 }
 
-/*=== "PIZZA MAIS VENDIDA" BANNER =================================*/
+/*=== Request =================================*/
+
+#carte {
+  padding-block: 0;
+  padding-top: calc(0.5rem + var(--nav-height));
+  background-color: var(--bg-black);
+  height: 172rem;
+}
+
+#carte header h1{
+  margin-bottom: 4rem;
+}
+
+#carte .cards{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#carte .card{
+  padding: 1.8rem;
+  text-align: center;
+
+  background: var(--bg-grey);
+  border-radius: 2.5rem;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+#carte .card img{
+  width: 16rem;
+  border-radius: 45%;
+}
+
+#carte .card h3{
+  font-size: 2rem;
+  margin-block: 1.6rem;
+}
+
+#carte .card h4{
+  font-size: 3rem;
+  color: var(--luminous-white);
+}
+
+#carte .card p{
+  color: var(--primary-grey);
+  margin-block: 1.5rem;
+}
+
+#carte .buy{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  margin-block: 2rem;
+}
+
+#carte a.button{
+  background: var(--primary-orange);
+  padding: 1rem 2.3rem;
+  margin: 0;
+}
+
+#carte a.button:hover{
+  background-color: var(--hover-orange);
+}
+
+/*=== About =================================*/
+
+#about{
+  background-color: var(--bg-grey);
+  padding-block: 0;
+  padding-top: calc(0.5rem + var(--nav-height));
+  height: 100rem;
+}
+
+#about header h1{
+  margin-bottom: 2rem;
+}
+
+#about h3{
+  font-size: 2rem;
+  margin: 4rem 0 0 0;
+}
+
+#about .content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+#about p{
+  color: var(--primary-grey);
+  margin-block: 2rem;
+}
+
+#about .content .col-b img{
+  border-radius: 1rem;
+  margin-inline: auto;
+  margin-block: 3rem;
+}
+
+/*=== Meet =================================*/
+
+
+
+
 
 
 
