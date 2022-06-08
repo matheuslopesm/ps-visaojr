@@ -7,7 +7,7 @@
   
 :root{
   --primary-orange: hsl(18, 100%, 50%);
-  --hover-orange: hsl(18, 100%, 42%);
+  --hover-orange: hsl(18, 92%, 38%);
   --primary-purple: hsl(330, 58%, 44%);
   --primary-grey: hsl(0, 0%, 61%);
     
@@ -19,6 +19,10 @@
   font-size: 62.5%; /* 1rem = 10px, Com isso pode usar REM à vontade */
   
   --nav-height: 7.2rem;
+}
+
+html{
+  scroll-behavior: smooth;
 }
   
 html,
@@ -51,6 +55,10 @@ ul {
 img {
   max-width: 100%;
 }
+
+section{
+  padding-block: 10rem;
+}
    
 a.button {
   border: none;
@@ -79,13 +87,6 @@ a.button {
 .button:hover {
   background-color: var(--luminous-white);
 }
-  
-/* .social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3.2rem;
-} */
 
 section h3{
   font-size: 1.3rem;
@@ -112,6 +113,25 @@ section .col-a p{
   color: var(--primary-grey);
 }
 
+#home a.button,
+#meet a.button{
+  margin-inline: auto;
+
+  background: var(--primary-orange);
+   
+  padding: 1rem 2.3rem;
+}
+
+#home a.button svg,
+#meet a.button svg{
+  width: 2.5rem;
+}
+
+#home a.button:hover,
+#meet a.button:hover{
+  background-color: var(--hover-orange);
+}
+
   
 /*=== NAVIGATION =================================*/
 nav {
@@ -135,6 +155,10 @@ nav .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+nav.scroll{
+  background-color: var(--bg-black);
 }
   
 nav button {
@@ -265,22 +289,6 @@ body.menu-expanded button path {
   z-index: -1;
 }
 
-#home a.button{
-  margin-inline: auto;
-
-  background: var(--primary-orange);
-   
-  padding: 1rem 2.3rem;
-}
-
-#home a.button svg{
-  width: 2.5rem;
-}
-
-#home a.button:hover{
-  background-color: var(--hover-orange);
-}
-
 #home img {
   display: none; 
   /* Imagem muito grande para encaixar no mobile, colocarei em desktop */
@@ -289,10 +297,7 @@ body.menu-expanded button path {
 /*=== Request =================================*/
 
 #carte {
-  padding-block: 0;
-  padding-top: calc(0.5rem + var(--nav-height));
   background-color: var(--bg-black);
-  height: 172rem;
 }
 
 #carte header h1{
@@ -310,8 +315,8 @@ body.menu-expanded button path {
   text-align: center;
 
   background: var(--bg-grey);
-  border-radius: 2.5rem;
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 1.5rem;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.253);
 }
 
 #carte .card img{
@@ -325,7 +330,7 @@ body.menu-expanded button path {
 }
 
 #carte .card h4{
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--luminous-white);
 }
 
@@ -358,9 +363,6 @@ body.menu-expanded button path {
 
 #about{
   background-color: var(--bg-grey);
-  padding-block: 0;
-  padding-top: calc(0.5rem + var(--nav-height));
-  height: 100rem;
 }
 
 #about header h1{
@@ -380,7 +382,6 @@ body.menu-expanded button path {
 }
 
 #about p{
-  color: var(--primary-grey);
   margin-block: 2rem;
 }
 
@@ -388,10 +389,81 @@ body.menu-expanded button path {
   border-radius: 1rem;
   margin-inline: auto;
   margin-block: 3rem;
+
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.199);
 }
 
 /*=== Meet =================================*/
 
+#meet{
+  background-color: var(--bg-black);
+  text-align: left;
+}
+
+#meet header h1,
+#meet header h3{
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#meet .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+
+  margin-bottom: 2rem;
+}
+
+#meet .social-links li a{
+  width: 12rem;
+}
+
+#meet .col-a p{
+  margin-bottom: 4rem;
+}
+
+#meet .content .col-b img{
+  border-radius: 1rem;
+  margin-inline: auto;
+  margin: 1rem 0 3rem 0;
+
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.199);
+}
+
+/*=== Footer =================================*/
+
+footer{
+  background-color: var(--bg-grey);
+  padding-block: 6rem;
+
+  text-align: left;
+  color: var(--luminous-white);
+}
+
+footer .wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+footer .logo{
+  display: inline-block;
+  margin-bottom: 2.4rem;
+}
+
+footer p{
+  margin-bottom: 2rem;
+}
+
+footer .map iframe{
+  width: 22rem;
+  height: 22rem;
+}
+
+/* Fim Mobile */
 
 
 
