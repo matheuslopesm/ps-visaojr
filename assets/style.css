@@ -440,6 +440,9 @@ body.menu-expanded button path {
   height: 30rem;
   margin-inline: auto;
 
+  display: flex;
+  align-items: center;
+
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.199);
 }
 
