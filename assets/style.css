@@ -309,6 +309,10 @@ body.menu-expanded button path {
   width: 100rem;
 }
 
+#sold a .banner-desktop{
+  display: none;
+}
+
 /*=== Request =================================*/
 
 #carte {
@@ -503,7 +507,7 @@ footer .col-b .social-links{
   }
 
   section{
-    padding-block: 16rem;
+    padding-block: 12rem;
   }
 
   /*===== Navigation ===== */
@@ -571,13 +575,14 @@ footer .col-b .social-links{
   }
 
   /*===== Home ===== */
+  #home{
+    padding-top: var(--nav-height);
+  }
+
   #home::before{
     height: calc(91% - var(--nav-height));
   }
 
-  #home{
-    padding-top: var(--nav-height);
-  }
 
   #home .wrapper{
     grid-template-columns: 50rem 1fr;
@@ -587,7 +592,8 @@ footer .col-b .social-links{
 
   #home .col-b img {
     display: block;
-    height: 100%;  
+    height: 100%;
+    filter: brightness(1.2);  
   }
 
   #home .col-a{
@@ -610,10 +616,86 @@ footer .col-b .social-links{
     font-size: 1.7rem;
   }
 
+  /* ===== Sold ===== */
 
+  #sold {
+    padding-block: 0rem;
+  }
 
+  #sold .banner-mobile{
+    display: none;
+  }
+  
+  #sold .wrapper a .banner-desktop{
+    display: block;
+    width: 100%;
+  }
 
+  /* ===== Services ===== */
+  #carte h1{
+    width: 47rem;
+    margin-inline: auto;
+  }
 
+  #carte .wrapper .cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+
+  #carte .card{
+    width: 45rem;
+    flex-grow: 1;
+  }
+
+  /* ===== About ===== */
+  #about h3{
+    font-size: 2.7rem;    
+  }
+
+  #about .col-a{
+    width: 82%;
+  }
+
+  #about .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  /* ===== Meet ===== */
+  #meet h3{
+    font-size: 1.8rem;
+  }
+
+  #meet .content{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    margin-top: 4rem;
+  }
+
+  #meet .col-a p{
+    width: 70%;
+    margin-inline: auto;
+  }
+
+  /* ===== Footer ===== */
+  footer{
+    padding-block: 4rem;
+  }
+
+  footer .wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 62rem;
+  }
+
+  footer p{
+    margin-bottom: 0;
+  }
 }
 
 
