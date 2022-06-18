@@ -484,7 +484,37 @@ footer .col-b .social-links{
 
 /*======================= Responsivo =======================*/
 
-@media(min-width: 1024px) {
+@media (min-width: 767px) {
+  .wrapper {
+    width: min(75rem, 100%);
+  }
+
+  #home{
+    padding-top: var(--nav-height);
+    background-color: var(--bg-black);
+    padding-block: 11rem;
+  }
+
+  #home .wrapper .col-a {
+    margin-top: 6rem;
+  }
+
+  #sold {
+    padding-block: 0rem;
+    background-color: var(--bg-grey);
+  }
+
+  #sold .banner-mobile{
+    display: none;
+  }
+  
+  #sold .wrapper a .banner-desktop{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media(min-width: 992px) {
   /*===== Geral ===== */
   body{
     overflow: auto;
@@ -725,6 +755,10 @@ footer .col-b .social-links{
 
   footer p{
     margin-bottom: 0;
+  }
+
+  footer .col-b .social-links li{
+    height: 30px;
   }
 
   
