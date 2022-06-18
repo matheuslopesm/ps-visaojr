@@ -143,6 +143,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100vw;
+  background: var(--bg-black);
   
   z-index: 100;
 }
@@ -155,10 +156,6 @@ nav .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-nav.scroll{
-  background-color: var(--bg-black);
 }
   
 nav button {
@@ -512,7 +509,7 @@ footer .col-b .social-links{
 
   /*===== Navigation ===== */
   /* reset */
-  nav#navigation .wrapper *{
+  nav.navigation .wrapper *{
     margin: 0;
     padding: 0;
     visibility: initial;
@@ -528,30 +525,30 @@ footer .col-b .social-links{
     filter: initial;
   }
 
-  nav#navigation .close-menu,
-  nav#navigation .open-menu{
+  nav.navigation .close-menu,
+  nav.navigation .open-menu{
     display: none;
   }
 
-  nav#navigation .menu {
+  nav.navigation .menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 65%;
   }
 
-  nav#navigation .menu ul:nth-child(1){
+  nav.navigation .menu ul:nth-child(1){
     display: flex;
     gap: 3.2rem;
 
     text-transform: uppercase;
   }
 
-  nav#navigation .menu ul li a {
+  nav.navigation .menu ul li a {
     color: var(--luminous-white);
   }
 
-  nav#navigation .menu a.button{
+  nav.navigation .menu a.button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -569,7 +566,7 @@ footer .col-b .social-links{
     text-transform: uppercase;
   }
 
-  nav#navigation .menu a.button:hover{
+  nav.navigation .menu a.button:hover{
     background-color: var(--hover-orange);
     border: none;
   }
