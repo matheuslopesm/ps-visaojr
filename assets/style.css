@@ -484,7 +484,37 @@ footer .col-b .social-links{
 
 /*======================= Responsivo =======================*/
 
-@media(min-width: 1024px) {
+@media (min-width: 767px) {
+  .wrapper {
+    width: min(75rem, 100%);
+  }
+
+  #home{
+    padding-top: var(--nav-height);
+    background-color: var(--bg-black);
+    padding-block: 11rem;
+  }
+
+  #home .wrapper .col-a {
+    margin-top: 6rem;
+  }
+
+  #sold {
+    padding-block: 0rem;
+    background-color: var(--bg-grey);
+  }
+
+  #sold .banner-mobile{
+    display: none;
+  }
+  
+  #sold .wrapper a .banner-desktop{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media(min-width: 992px) {
   /*===== Geral ===== */
   body{
     overflow: auto;
@@ -546,6 +576,11 @@ footer .col-b .social-links{
 
   nav.navigation .menu ul li a {
     color: var(--luminous-white);
+    transition-duration: 0.2s;
+  }
+
+  nav.navigation .menu ul li a:hover{
+    color: var(--primary-orange);
   }
 
   nav.navigation .menu a.button{
@@ -565,15 +600,17 @@ footer .col-b .social-links{
     line-height: 1.8rem;
     text-transform: uppercase;
   }
-
+  
   nav.navigation .menu a.button:hover{
     background-color: var(--hover-orange);
     border: none;
   }
-
+  
   /*===== Home ===== */
   #home{
     padding-top: var(--nav-height);
+    background-color: var(--bg-black);
+    padding-block: 11rem;
   }
 
   #home::before{
@@ -590,8 +627,9 @@ footer .col-b .social-links{
   #home .col-b img {
     display: block;
     height: 100%;
-    filter: brightness(1.2);  
+    filter: brightness(1.2); 
   }
+
 
   #home .col-a{
     margin-top: 2rem;
@@ -617,6 +655,7 @@ footer .col-b .social-links{
 
   #sold {
     padding-block: 0rem;
+    background-color: var(--bg-grey);
   }
 
   #sold .banner-mobile{
@@ -679,20 +718,50 @@ footer .col-b .social-links{
     margin-inline: auto;
   }
 
+  #meet .social-links li {
+    height: 30px;
+  }
+
+  .insta {
+    height: 30px;
+    transition-duration: 0.1s;
+  }
+  
+  .face {
+    height: 30px;
+    transition-duration: 0.1s;
+  }
+  
+  .insta:hover {
+    height: 24px;
+  }
+  
+  .face:hover {
+    transition-duration: 0.1s;
+    height: 25px;
+  }
+
   /* ===== Footer ===== */
   footer{
-    padding-block: 4rem;
+    padding-block: 2rem;
   }
 
   footer .wrapper{
     display: flex;
     flex-direction: row;
     gap: 62rem;
+    align-items: center;
   }
 
   footer p{
     margin-bottom: 0;
   }
+
+  footer .col-b .social-links li{
+    height: 30px;
+  }
+
+  
 }
 
 
